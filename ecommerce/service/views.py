@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .form import UserForm
 from .models import User
 
@@ -20,3 +20,7 @@ def admin_portal(request):
 
 def home(request):
     return render(request, 'home.html')
+def userlogin(request):
+    return render(request, 'user_login.html')
+def userregister(request):
+    return render(request, 'registation.html')
